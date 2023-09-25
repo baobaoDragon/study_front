@@ -1,0 +1,253 @@
+{
+  "easycom": {
+    // "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue",
+    "^u-(.*)": "@/node_modules/uview-ui/components/u-$1/u-$1.vue",
+    "^z-tabs": "@zxlee/z-tabs/components/z-tabs/z-tabs.vue"
+  },
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 350
+      }
+    }, {
+      "path": "pages/cate/cate",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/add/add",
+      "style": {
+        "navigationBarTitleText": "发帖",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/study/study",
+      "style": {
+        "navigationBarTitleText": "学习",
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 350
+      }
+
+    }, {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "subPackages": [{
+    "root": "subpkg",
+    "pages": [{
+        "path": "search/search",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "regist/regist",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "login/loginByCode",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      },{
+        "path": "login/login",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      },{
+        "path": "login/findPassword",
+        "style": {
+          "navigationStyle": "custom", // 隐藏系统导航栏
+          "navigationBarTextStyle": "white", // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "course_detail/course_detail",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      },{
+        "path": "home_grid/hot_new",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "home_grid/jf_center",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "home_grid/jf_detail",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "news_detail/news_detail",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }, {
+        "path": "user/collect",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false,
+          "onReachBottomDistance": 350
+        }
+      },
+      {
+        "path": "user/jfshop",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/course",
+        "style": {
+          "navigationBarTitleText": "我的课程",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/collect",
+        "style": {
+          "navigationBarTitleText": "我的收藏",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/ai_tools_five",
+        "style": {
+          "navigationBarTitleText": "AI绘画",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/ai_tools_six",
+        "style": {
+          "navigationBarTitleText": "AI文本错别字检测",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/ai_tools",
+        "style": {
+          "navigationBarTitleText": "玩吧——AI体验",
+          "enablePullDownRefresh": false,
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "path": "user/report",
+        "style": {
+          "navigationBarTitleText": "学习报告",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/ai_tools_detail",
+        "style": {
+          "navigationBarTitleText": "AI工具合集",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "user/tieHistory",
+        "style": {
+          "navigationBarTitleText": "浏览历史",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "user/editInfo",
+        "style": {
+          "navigationBarTitleText": "修改信息",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "ties_detail/ties_detail",
+        "style": {
+          "navigationBarTitleText": "",
+          "enablePullDownRefresh": false
+        }
+
+      }, {
+        "path": "setting/setting",
+        "style": {
+          "navigationBarTitleText": "设置",
+          "enablePullDownRefresh": false
+        }
+      },
+      {
+        "path": "setting/editPwd",
+        "style": {
+          "navigationBarTitleText": "修改密码",
+          "enablePullDownRefresh": false
+        }
+      }
+    ]
+  }],
+  "tabBar": {
+    "selectedColor": "#3cc2f4",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/tab_icons/shouye1.png",
+        "selectedIconPath": "static/tab_icons/shouye1.png"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "text": "分类",
+        "iconPath": "static/tab_icons/fenlei1.png",
+        "selectedIconPath": "static/tab_icons/fenlei1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "发表帖子",
+        "iconPath": "static/tab_icons/jiahao.png",
+        "selectedIconPath": "static/tab_icons/jiahao.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "static/tab_icons/xuexirenwu.png",
+        "selectedIconPath": "static/tab_icons/xuexirenwu.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "static/tab_icons/gerenzhongxin.png",
+        "selectedIconPath": "static/tab_icons/gerenzhongxin.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "uniIdRouter": {}
+}
